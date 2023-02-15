@@ -1,0 +1,40 @@
+*{
+  margin:0;
+  padding:0;
+}
+
+header{
+  color:antiquewhite;
+  background-color: rgb(45, 21, 21);
+  width:100%;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom:5px;
+}
+
+h1,p{
+    font-family:sans-serif;
+    text-align:center;
+   
+  }
+  
+img{  
+    max-width:80%;
+    width:70%;
+    display:block;
+    margin:0 auto;
+}
+
+#img-div{
+  background-color: rgb(218, 160, 35);
+}
+
+#img-caption{
+  display: block;
+  padding: 10px;
+  text-align: center;
+  background-color: rgba(128, 68, 68, 0.592);
+  margin: 10px 25px ;
+}
+
+

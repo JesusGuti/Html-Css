@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head class="header">
+    <meta charset="utf-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles_survey.css"/>
+  </head>
+
+  <body>
+    <h1 id="title">freeCodeCamp Survey Form</h1>  
+    <p id="description">Gracias por ayudarnos con tu tiempo</p>
+    
+    <form id="survey-form">
+      <!-- Esta primera seccion sera para los datos de input -->
+      <fieldset>
+        <label id="name-label" for="name">Nombre: 
+          <input id="name" type="text" placeholder="Ingrese su nombre" class="form-control" required>
+        </label>
+        <label id="email-label" for="email">Correo Electronico: 
+          <input id="email" type="email" placeholder="Ingrese un Correo Valido" pattern="[a-z0-5]{8,}" required>
+        </label>
+        <label id="number-label" for="number">Edad(Opcional) 
+          <input id="number" type="number" min="15" max="100" placeholder="Ingrese su edad">
+        </label>
+      </fieldset>
+
+      <!-- Esta segunda seccion sera para seleccionar-->
+      <fieldset>
+        <label>¿En qué situacion laboral se encuentra en este momento?</label>
+        <select id="dropdown" name="role" class="survey-form" required>
+          <option disabled selected value>(Seleccione)</option>
+          <option value="student">Estudiante</option>
+          <option value="full">Trabajo a Tiempo Completo</option>
+          <option value="partial">Trabajo a Tiempo Parcial</option>
+          <option value="other">Otro</option>
+        </select>
+
+        <p>¿Recomendarias a un amigo FreeCodeCamp?</p>
+        <label>
+            <input name="user-recommend" value="definitely" type="radio" class="input-radio"/> Definitivamente</label>
+        <label>
+            <input name="user-recommend" value="maybe" type="radio" class="input-radio"/> Tal vez
+        </label>
+        <label>
+          <input name="user-recommend" value="not-sure" type="radio" class="input-radio"/> No estoy seguro
+        </label>
+        <div>
+          <p>¿Qué te gustaria aprender en FreeCodeCamp?</p>
+          <label>
+            <input name="prefer" value="front-end-projects" type="checkbox" class="input-checkbox"/>Front End Projects
+          </label>
+          <label>
+            <input name="prefer" value="back-end-projects" type="checkbox" class="input-checkbox"/>Back End Projects
+          </label>
+          <label>
+            <input name="prefer" value="machine-learning" type="checkbox" class="input-checkbox"/>Machine Learning
+          </label>
+          <label>
+            <input name="prefer" value="data-base" type="checkbox" class="input-checkbox"/>Data Base
+          </label>
+        </div>
+      </fieldset>
+
+      <!--Ultima Seccion:-->
+      <fieldset>
+        <p>¿Algunos comentarios o sugerencias?</p>
+        <div class="form-group">
+          <textarea class="input-textarea">
+            
+          </textarea>
+        </div>
+        <input type="submit" id="submit" class="submit-button">
+      </fieldset>
+    </form>
+  </body>
+</html>
