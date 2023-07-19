@@ -1,40 +1,86 @@
 *{
   margin:0;
   padding:0;
+  font-family:Helvetica,Arial,sans-serif;
 }
 
 header{
-  color:antiquewhite;
-  background-color: rgb(45, 21, 21);
   width:100%;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom:5px;
+  display: flex;
+  max-height: 100px;
+  border:1px solid black;
 }
 
-h1,p{
-    font-family:sans-serif;
-    text-align:center;
-   
-  }
+.beatles-logo{
+  margin-left: 0;
+  max-width: 120px;
+  margin-right: 0;
+}
+
+p{
+    font-weight: bold;
+    flex-grow: 1;
+    margin-top:auto;
+    margin-bottom: auto;
+    text-align: center;
+}
   
 img{  
-    max-width:80%;
-    width:70%;
+    max-width: 300px;
     display:block;
     margin:0 auto;
 }
 
-#img-div{
-  background-color: rgb(218, 160, 35);
-}
 
 #img-caption{
   display: block;
   padding: 10px;
   text-align: center;
-  background-color: rgba(128, 68, 68, 0.592);
-  margin: 10px 25px ;
+  margin: 10px 25px;
+  font-weight: bold;
+}
+
+.menu{
+  width:150px;
+  height: 100%;
+  background-color: black;
+  color:white;
+  position:fixed;
+}
+
+.menu ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li{
+  display: block;
+}
+
+.menu li a{
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color:white;
+}
+
+.contenedor{
+  display: flex;
+}
+
+.contenido{
+  margin-left: 180px;
+  flex-grow: 1;
+}
+
+nav{
+  text-align: left;
 }
 
 
+#tribute-info{
+  padding: 2 2;
+  margin-left:5%;
+  width:90%  
+}
