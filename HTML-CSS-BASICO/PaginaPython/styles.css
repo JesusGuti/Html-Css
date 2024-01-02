@@ -1,0 +1,51 @@
+html,body{
+    font-family: 'Open Sans',Arial, Helvetica, sans-serif;
+}
+
+.logo{
+    max-width:200px;
+}
+
+/**Estamos usando con fixed, relativo al viewport
+    Se mantendra en la misma pos, incluso si se scrolea
+**/
+#navbar{
+    position:fixed;
+    top:0px;
+    left:0px;
+    width:300px;
+    height: 100%;
+    background-color: #2b5b84;
+}
+
+#navbar header{
+    color:white;
+}
+
+#navbar li{
+    /**Con esto quitamos los puntitos**/
+    list-style: none;
+}
+
+#navbar a{
+    color:white;
+    text-decoration: none;
+}
+
+/****/
+#main-doc{
+    position: absolute;
+    margin-left: 310px;
+    padding: 20px;
+    margin-bottom: 110px;
+}
+
+.main-section{
+    width:90%;
+}
+
+header{
+    color:black;
+    font-size: 1.5em;
+    font-weight: bolder;
+}
