@@ -41,13 +41,14 @@ h1{
   line-height: 1.2;
 }
 
-p{
+body p{
   font-size:1.125rem;
 }
 
-h1,p{
-  margin-top: 0;
+h1,body p{
+  margin-top: 1rem;
   margin-bottom: 0.5rem;
+  margin-left: 20px;
 }
 
 fieldset{
@@ -109,20 +110,26 @@ button{
 form{
   background: var(--color-darkblue-alpha);
   padding: 2.5rem 0.625rem;
-  border-radius: 0.25rem; 
+  border-radius: 0.25rem;
+  width: 50vw; 
+  margin: 0 auto;
 }
 
-
 .form-control{
-  display:block;
+  margin: 0 auto;
+  height:2rem;
   width:60%;
-  height:2.375rem;
   padding:0.375rem 0.75rem;
+  margin-right: 20px;
   color:#495057;
   background-clip:padding-box;
   border:1 px solid #ced4da;
   border-radius:0.25rem;
   transition:border-color 0.15s ease-in-out,box-shadow 0.15s ease-in-out;
+}
+
+form p{
+  margin:10px 0;
 }
 
 textarea{
@@ -134,11 +141,11 @@ textarea{
 }
 
 .submit-button{
-  display: block;
-  width: 100%;
+  width: 20vw;
   padding: 0.75rem;
   background: var(--color-green);
   color:inherit;
   border-radius:2px;
   cursor:pointer;
+  margin: 0 auto;
 }
